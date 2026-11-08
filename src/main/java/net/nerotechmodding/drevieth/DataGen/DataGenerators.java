@@ -38,7 +38,7 @@ public class DataGenerators {
         gen.addProvider(event.includeClient(), new LanguageProvider(output, Drevieth.MOD_ID, "en_us") {
             @Override
             protected void addTranslations() {
-                add("generator.myworld.my_world", "Drevieth");
+                add("generator.preset.myworld.drevieth", "Drevieth");
             }
         });
     }
