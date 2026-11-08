@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.nerotechmodding.drevieth.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["BiomeMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
