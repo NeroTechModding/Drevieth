@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "net.nerotechmodding.drevieth.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["BiomeMixin"],
+  "mixins": ["BiomeMixin", "HeightRangePlacementMixin"],
   "injectors": {
     "defaultRequire": 1
   }

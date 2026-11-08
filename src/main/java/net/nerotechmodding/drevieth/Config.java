@@ -23,6 +23,14 @@ public class Config {
             .comment("What you want the introduction message to be for the magic number")
             .define("magicNumberIntroduction", "The magic number is... ");
 
+    public static final ModConfigSpec.BooleanValue SCALE_MODDED_ORES = BUILDER
+            .comment("Stretch ore heights from other mods to fit the taller Drevieth world (-64 to 1024).")
+            .define("scaleModdedOres", true);
+
+    public static final ModConfigSpec.ConfigValue<List<? extends String>> SCALE_MODDED_ORES_EXCLUDE = BUILDER
+            .comment("Mod ids (e.g. \"create\") or placed feature ids (e.g. \"create:zinc_ore\") whose ore heights should NOT be stretched.")
+            .defineListAllowEmpty("scaleModdedOresExclude", List.of(), () -> "", obj -> obj instanceof String);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     private static boolean validateItemName(final Object obj) {
